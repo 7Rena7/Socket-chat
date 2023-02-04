@@ -1,6 +1,6 @@
 const url = window.location.hostname.includes("localhost")
   ? "http://localhost:8080/"
-  : "";
+  : "https://socket-chat-le9enwyil-7rena7.vercel.app/";
 
 let socketServer = null;
 

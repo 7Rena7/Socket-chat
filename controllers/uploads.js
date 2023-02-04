@@ -1,6 +1,6 @@
 const { request, response } = require("express");
 const fs = require("fs");
-const path = require("path");
+// const path = require("path");
 const cloudinary = require("cloudinary").v2;
 cloudinary.config(process.env.CLOUDINARY_URL);
 
