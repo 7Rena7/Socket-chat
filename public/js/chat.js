@@ -14,6 +14,7 @@ async function checkToken() {
   const token = localStorage.getItem("token");
 
   const fetchInfo = {
+    mode: "no-cors",
     method: "GET",
     headers: {
       "Content-Type": "application/json",

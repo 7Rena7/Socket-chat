@@ -37,6 +37,7 @@ async function submitHandler(event) {
   }
 
   const fetchInfo = {
+    mode: "no-cors",
     method: "POST",
     headers: {
       "Content-Type": "application/json",
