@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="google-signin-client_id"
+      content="132391816256-kol5f1ltrurugqpo8qmpommfok7ur4hn.apps.googleusercontent.com"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -71,7 +75,9 @@
         gap: 1rem;
       "
     >
-      <div
+      <div class="g-signin2" data-onsuccess="onSignIn"></div>
+
+      <!-- <div
         id="g_id_onload"
         data-client_id="132391816256-kol5f1ltrurugqpo8qmpommfok7ur4hn.apps.googleusercontent.com"
         data-context="signin"
@@ -89,14 +95,15 @@
         data-text="continue_with"
         data-size="large"
         data-logo_alignment="left"
-      ></div>
+      ></div> -->
 
       <!-- <button id="google-signout" class="btn btn-light" disabled="true">
         Sign Out
       </button> -->
     </div>
 
-    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <!-- <script src="https://accounts.google.com/gsi/client" async defer></script> -->
     <script src="./js/auth.js"></script>
   </body>
 </html>
