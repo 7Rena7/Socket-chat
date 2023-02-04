@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <title>My App</title>
+  </head>
+  <body
+    style="
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 4rem;
+      height: 100vh;
+      background: slategrey;
+    "
+  >
+    <form
+      id="sign-in-form"
+      style="
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 0.3rem;
+      "
+    >
+      <div class="mb-3">
+        <label for="email" class="form-label text-light">Email</label>
+        <input
+          type="email"
+          class="form-control"
+          name="email"
+          id="email"
+          placeholder="your@email.com"
+        />
+      </div>
+
+      <div class="mb-3">
+        <label for="password" class="form-label text-light">Password</label>
+        <input
+          type="password"
+          class="form-control"
+          name="password"
+          id="password"
+          placeholder="********"
+        />
+      </div>
+
+      <button type="submit" class="btn btn-primary">Sign In</button>
+      <a href="#" class="fs-6 text-light"
+        >Don't have a user? Create one here!</a
+      >
+    </form>
+
+    <div
+      id="google-sign-in-container"
+      style="
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1rem;
+      "
+    >
+      <div
+        id="g_id_onload"
+        data-client_id="132391816256-kol5f1ltrurugqpo8qmpommfok7ur4hn.apps.googleusercontent.com"
+        data-context="signin"
+        data-ux_mode="popup"
+        data-login_uri="http://localhost:8080"
+        data-auto_prompt="false"
+        data-callback="handleCredentialResponse"
+      ></div>
+
+      <div
+        class="g_id_signin"
+        data-type="standard"
+        data-shape="pill"
+        data-theme="filled_blue"
+        data-text="continue_with"
+        data-size="large"
+        data-logo_alignment="left"
+      ></div>
+
+      <!-- <button id="google-signout" class="btn btn-light" disabled="true">
+        Sign Out
+      </button> -->
+    </div>
+
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="./js/auth.js"></script>
+  </body>
+</html>
