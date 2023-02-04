@@ -3,7 +3,7 @@ const form = document.querySelector("form");
 
 const url = window.location.hostname.includes("localhost")
   ? "http://localhost:8080/"
-  : "https://socket-chat-le9enwyil-7rena7.vercel.app/";
+  : "https://socket-chat-eta.vercel.app/";
 
 // Use if different error handlers are needed
 function handleErr(errCode) {
