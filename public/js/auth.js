@@ -66,7 +66,7 @@ form.addEventListener("submit", submitHandler);
 
 function handleCredentialResponse(response) {
   // Google Token / ID_TOKEN
-  // console.log("id_token", response.credential);
+  console.log("id_token", response.credential);
 
   const body = { id_token: response.credential };
 
