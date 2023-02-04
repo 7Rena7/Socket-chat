@@ -75,14 +75,13 @@
         gap: 1rem;
       "
     >
-      <!-- <div class="g-signin2" data-onsuccess="onSignIn"></div> -->
-
       <div
         id="g_id_onload"
         data-client_id="132391816256-kol5f1ltrurugqpo8qmpommfok7ur4hn.apps.googleusercontent.com"
         data-context="signin"
         data-ux_mode="popup"
         data-login_uri="https://socket-chat-eta.vercel.app/"
+        data-login_uri="http://localhost:8080"
         data-auto_prompt="false"
         data-callback="handleCredentialResponse"
       ></div>
@@ -102,8 +101,8 @@
       </button> -->
     </div>
 
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
-    <!-- <script src="https://accounts.google.com/gsi/client" async defer></script> -->
+    <!-- <script src="https://apis.google.com/js/platform.js" async defer></script> -->
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
     <script src="./js/auth.js"></script>
   </body>
 </html>
